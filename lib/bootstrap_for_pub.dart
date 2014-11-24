@@ -1,14 +1,14 @@
-library bootstrap_for_pub;
+library bootstrap;
 
-import 'package:html5lib/parser.dart' show parse;
-import 'package:html5lib/dom.dart' show Document;
-import 'package:barback/barback.dart'
-  show Asset, Transform, Transformer, BarbackSettings, BarbackMode;
 import 'dart:async' show Future;
 
+import 'package:barback/barback.dart'
+  show Asset, Transform, Transformer, BarbackSettings, BarbackMode;
+import 'package:html5lib/dom.dart' show Document;
+import 'package:html5lib/parser.dart' show parse;
 
 class BootstrapUrlTransformer extends Transformer {
-  static const String _BASE_URL = 'packages/bootstrap_for_pub/';
+  static const String _BASE_URL = 'packages/bootstrap/';
 
   bool releaseMode;
   String bootstrapUrl;
